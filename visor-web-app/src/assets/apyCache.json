@@ -1,0 +1,222 @@
+{
+  "0x032c4e67fa01f6c3b01d0903d672d73b2f8d9dce": {
+    "daily": {
+      "cumFeeReturn": 0.002259512995185453,
+      "feeApr": 1.6324742342476682,
+      "feeApy": 1.6335919148843632,
+      "totalPeriodSeconds": 50093
+    },
+    "monthly": {
+      "cumFeeReturn": 0.002259512995185453,
+      "feeApr": 1.6324742342476682,
+      "feeApy": 3.135919148843632,
+      "totalPeriodSeconds": 50093
+    },
+    "weekly": {
+      "cumFeeReturn": 0.002259512995185453,
+      "feeApr": 1.6324742342476682,
+      "feeApy": 1.6335919148843632,
+      "totalPeriodSeconds": 50093
+    }
+  },
+  "0x53a4512Bbe5083695d8e890789Fe1cF6F5686D52": {
+    "daily": {
+      "cumFeeReturn": 0.002259512995185453,
+      "feeApr": 1.6324742342476682,
+      "feeApy": 1.6335919148843632,
+      "totalPeriodSeconds": 50093
+    },
+    "monthly": {
+      "cumFeeReturn": 0.002259512995185453,
+      "feeApr": 1.6324742342476682,
+      "feeApy": 3.135919148843632,
+      "totalPeriodSeconds": 50093
+    },
+    "weekly": {
+      "cumFeeReturn": 0.002259512995185453,
+      "feeApr": 1.6324742342476682,
+      "feeApy": 1.6335919148843632,
+      "totalPeriodSeconds": 50093
+    }
+  },
+  "0x6e67bb258b6485b688cbb526c868d4428b634cf1": {
+    "daily": {
+      "cumFeeReturn": 0.002259512995185453,
+      "feeApr": 1.5224742342476682,
+      "feeApy": 1.5235919148843632,
+      "totalPeriodSeconds": 50093
+    },
+    "monthly": {
+      "cumFeeReturn": 0.002259512995185453,
+      "feeApr": 1.4224742342476682,
+      "feeApy": 3.135919148843632,
+      "totalPeriodSeconds": 50093
+    },
+    "weekly": {
+      "cumFeeReturn": 0.002259512995185453,
+      "feeApr": 1.5224742342476682,
+      "feeApy": 1.5235919148843632,
+      "totalPeriodSeconds": 50093
+    }
+  },
+  "0x09b8d86c6275e707155cdb5963cf611a432ccb21": {
+    "daily": {
+      "cumFeeReturn": 0.002259512995185453,
+      "feeApr": 1.6724742342476682,
+      "feeApy": 1.675919148843632,
+      "totalPeriodSeconds": 50093
+    },
+    "monthly": {
+      "cumFeeReturn": 0.002259512995185453,
+      "feeApr": 1.4224742342476682,
+      "feeApy": 3.135919148843632,
+      "totalPeriodSeconds": 50093
+    },
+    "weekly": {
+      "cumFeeReturn": 0.002259512995185453,
+      "feeApr": 1.6724742342476682,
+      "feeApy": 1.675919148843632,
+      "totalPeriodSeconds": 50093
+    }
+  },
+  "0x18d3284d9eff64fc97b64ab2b871738e684aa151": {
+    "daily": {
+      "cumFeeReturn": 0.002259512995185453,
+      "feeApr": 1.4224742342476682,
+      "feeApy": 3.135919148843632,
+      "totalPeriodSeconds": 50093
+    },
+    "monthly": {
+      "cumFeeReturn": 0.002259512995185453,
+      "feeApr": 1.4224742342476682,
+      "feeApy": 3.135919148843632,
+      "totalPeriodSeconds": 50093
+    },
+    "weekly": {
+      "cumFeeReturn": 0.002259512995185453,
+      "feeApr": 1.4224742342476682,
+      "feeApy": 3.135919148843632,
+      "totalPeriodSeconds": 50093
+    }
+  },
+  "0x407e99b20d61f245426031df872966953909e9d3": {
+    "daily": {
+      "cumFeeReturn": 0.013103196703521114,
+      "feeApr": 1.4954650319822589,
+      "feeApy": 3.447800886659784,
+      "totalPeriodSeconds": 276317
+    },
+    "monthly": {
+      "cumFeeReturn": 0.015064883068877544,
+      "feeApr": 1.3077037375931666,
+      "feeApy": 2.6890417283478163,
+      "totalPeriodSeconds": 363298
+    },
+    "weekly": {
+      "cumFeeReturn": 0.013103196703521114,
+      "feeApr": 1.4954650319822589,
+      "feeApy": 3.447800886659784,
+      "totalPeriodSeconds": 276317
+    }
+  },
+  "0x6c8116abe5c5f2c39553c6f4217840e71462539c": {
+    "daily": {
+      "cumFeeReturn": 0.007772571196382749,
+      "feeApr": 0.8840520415529112,
+      "feeApy": 1.4181025283675122,
+      "totalPeriodSeconds": 277264
+    },
+    "monthly": {
+      "cumFeeReturn": 0.04209261291777988,
+      "feeApr": 1.3806469150207512,
+      "feeApy": 2.967127446172998,
+      "totalPeriodSeconds": 961457
+    },
+    "weekly": {
+      "cumFeeReturn": 0.007772571196382749,
+      "feeApr": 0.8840520415529112,
+      "feeApy": 1.4181025283675122,
+      "totalPeriodSeconds": 277264
+    }
+  },
+  "0x716bd8a7f8a44b010969a1825ae5658e7a18630d": {
+    "daily": {
+      "cumFeeReturn": 0.003547538149007101,
+      "feeApr": 0.40487683824524534,
+      "feeApy": 0.4987815065497212,
+      "totalPeriodSeconds": 276319
+    },
+    "monthly": {
+      "cumFeeReturn": 0.04262126355044793,
+      "feeApr": 1.2966018615279866,
+      "feeApy": 2.6484569312980386,
+      "totalPeriodSeconds": 1036636
+    },
+    "weekly": {
+      "cumFeeReturn": 0.003547538149007101,
+      "feeApr": 0.40487683824524534,
+      "feeApy": 0.4987815065497212,
+      "totalPeriodSeconds": 276319
+    }
+  },
+  "0x97491b65c9c8e8754b5c55ed208ff490b2ee6190": {
+    "daily": {
+      "cumFeeReturn": 0.007746503108891023,
+      "feeApr": 0.8823727589467143,
+      "feeApy": 1.414055044175719,
+      "totalPeriodSeconds": 276860
+    },
+    "monthly": {
+      "cumFeeReturn": 0.011868322579877022,
+      "feeApr": 1.0312602866609404,
+      "feeApy": 1.800522981014709,
+      "totalPeriodSeconds": 362934
+    },
+    "weekly": {
+      "cumFeeReturn": 0.007746503108891023,
+      "feeApr": 0.8823727589467143,
+      "feeApy": 1.414055044175719,
+      "totalPeriodSeconds": 276860
+    }
+  },
+  "0x9a98bffabc0abf291d6811c034e239e916bbcec0": {
+    "daily": {
+      "cumFeeReturn": 0.0035983531839625105,
+      "feeApr": 0.411231422124045,
+      "feeApy": 0.5083252610615141,
+      "totalPeriodSeconds": 275946
+    },
+    "monthly": {
+      "cumFeeReturn": 0.12453185850550397,
+      "feeApr": 2.6988034375402945,
+      "feeApy": 13.71511057981338,
+      "totalPeriodSeconds": 1455177
+    },
+    "weekly": {
+      "cumFeeReturn": 0.0035983531839625105,
+      "feeApr": 0.411231422124045,
+      "feeApy": 0.5083252610615141,
+      "totalPeriodSeconds": 275946
+    }
+  },
+  "0xc92ff322c8a18e38b46393dbcc8a7c5691586497": {
+    "daily": {
+      "cumFeeReturn": 0.005166003875274994,
+      "feeApr": 3.22885480836119,
+      "feeApy": 23.894750713859825,
+      "totalPeriodSeconds": 50456
+    },
+    "monthly": {
+      "cumFeeReturn": 0.005166003875274994,
+      "feeApr": 3.22885480836119,
+      "feeApy": 23.894750713859825,
+      "totalPeriodSeconds": 50456
+    },
+    "weekly": {
+      "cumFeeReturn": 0.005166003875274994,
+      "feeApr": 3.22885480836119,
+      "feeApy": 23.894750713859825,
+      "totalPeriodSeconds": 50456
+    }
+  }
+}

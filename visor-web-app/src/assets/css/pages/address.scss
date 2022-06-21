@@ -1,0 +1,72 @@
+.address-page{
+  width: 100%;
+  min-height: calc(100% - 81px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .address-page-inner{
+    .cvInputWrap{
+      display: flex;
+      align-items: center;
+      .cvInputLabel{
+        color: $text-02;
+        margin-bottom: 8px;
+      }
+      .bx--search {
+        .bx--search-input{
+          color: $text-01;
+          background: $ui-01;
+          &:focus{
+            outline: 2px solid transparent;
+          }
+        }
+        svg{
+          fill: $interactive-02;
+        }
+        .bx--search-close{
+          border: none;
+          &::before{
+            background: transparent;
+          }
+          &:hover {
+            background: transparent;
+          }
+          svg:hover{
+            fill: $ui-background;
+          }
+        }
+        .bx--search-input:focus ~ .bx--search-close:hover {
+          outline: 2px solid transparent;
+          outline-offset: -2px;
+        }
+      }
+      .has_erro-cv-input{
+        .bx--search{
+          border: solid 1px $support-01;
+          input{
+            outline: none;
+            border: none;
+          }
+        }
+      }
+      .cvInputSubLabel{
+        color: $text-02;
+        margin-top: 8px;
+      }
+      .has_erro-cv-input + .cvInputSubLabel{
+        color: $support-01;
+      }
+      .goAddress{
+        margin-left: 13px;
+        text-decoration: none;
+        padding: 0 20px;
+        height: 49px;
+        background: $ui-background;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: $ui-background;
+      }
+    }
+  }
+}

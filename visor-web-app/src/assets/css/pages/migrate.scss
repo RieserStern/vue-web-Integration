@@ -1,0 +1,306 @@
+.migrate-page {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  .migrate-body {
+    max-width: 480px;
+    width: 100%;
+    margin: auto;
+    color: $text-01;
+    background-color: $ui-01;
+    padding: 20px 15px;
+    @media screen and (max-width: 42rem) {
+      width: 95% !important;
+    }
+
+    // header
+    .migrate-header {
+      position: relative;
+      .header-title {
+        font-size: 25px;
+      }
+      .header-learn-more {
+        display: flex;
+        color: $text-02;
+        position: absolute;
+        top: 3px;
+        right: 0;
+        svg {
+          display: block;
+          margin-left: 5px;
+        }
+      }
+    }
+    .header-sub-title {
+      margin-top: 10px;
+      margin-bottom: 20px;
+      display: block;
+      line-height: normal;
+    }
+    .migrate-main-wrapper {
+      .main-title {
+        font-size: 20px;
+        font-weight: 500;
+        margin-bottom: 20px;
+        display: block;
+      }
+      .pool-item-container {
+        margin-bottom: 10px;
+      }
+      .existing-pool-item {
+        padding: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: $ui-02;
+        .pool-name-container {
+          display: flex;
+          align-items: center;
+          .token-icons {
+            display: flex;
+            margin-right: 5px;
+            position: relative;
+            min-width: 40px;
+            .first-icon {
+              width: 22px;
+              height: 22px;
+              border-radius: 50%;
+              background-color: $ui-04;
+            }
+            .second-icon {
+              width: 22px;
+              height: 22px;
+              border-radius: 50%;
+              background-color: $ui-05;
+              position: absolute;
+              right: 3px;
+            }
+          }
+          .name {
+            font-size: 15px;
+            font-weight: 500;
+          }
+          .version {
+            background-color: $ui-05;
+            color: $field-01;
+            padding: 5px 10px;
+            border-radius: 12px;
+            margin-left: 10px;
+            font-size: 10px;
+          }
+        }
+        .migrate-action {
+          .available-migrate {
+            color: #D3FA74;
+            &:hover {
+              cursor: pointer;
+            }
+          }
+          .non-available-migrate {
+            color: $text-05;
+          }
+        }
+      }
+    }
+  }
+  .migrate-pool-wrapper {
+    max-width: 480px;
+    width: 100%;
+    margin: auto;
+    color: $text-01;
+    background-color: $ui-01;
+    @media screen and (max-width: 42rem) {
+      width: 95% !important;
+    }
+    .migrate-pool-container {
+      padding: 20px 15px;
+      .pool-title {
+        font-size: 25px;
+        font-weight: 400;
+        margin-bottom: 20px;
+      }
+      .pool-subtitle {
+        font-size: 13px;
+        margin-bottom: 30px;
+      }
+      .pool-header{
+        padding: 15px;
+        display: flex;
+        position: relative;
+        border-bottom: 1px solid $ui-background;
+        .token-icons {
+          display: flex;
+          margin-right: 5px;
+          position: relative;
+          min-width: 40px;
+          .first-icon {
+            width: 22px;
+            height: 22px;
+            border-radius: 50%;
+            background-color: $ui-04;
+          }
+          .second-icon {
+            width: 22px;
+            height: 22px;
+            border-radius: 50%;
+            background-color: $text-02;
+            position: absolute;
+            right: 3px;
+          }
+        }
+        .name {
+          font-size: 15px;
+          font-weight: 500;
+          display: flex;
+          align-items: center;
+        }
+        .version {
+          position: absolute;
+          right: 15px;
+          background-color: $ui-05;
+          color: $field-01;
+          padding: 5px 10px;
+          border-radius: 12px;
+          margin-left: 10px;
+          font-size: 10px;
+        }
+        .uniswap-img {
+          position: absolute;
+          right: 15px;
+        }
+      }
+      .pool-v2 {
+        background-color: $ui-02;
+        .pool-slider {
+          padding: 15px;
+          position: relative;
+          .bx--slider-container {
+            width: 100%;
+            .bx--slider__range-label {
+              color: $text-01 !important;
+            }
+            .bx--slider__filled-track {
+              background: #D3FA74 !important;
+            }
+            .bx--slider__thumb {
+              background: #D3FA74 !important;
+            }
+            .bx--slider-text-input {
+              display: none;
+            }
+            .bx--slider__track {
+              background: $active-ui !important;
+              &:before {
+                background: $ui-04;
+              }
+            }
+          }
+          .slider-percentage-input {
+            position: absolute !important;
+            right: 15px;
+            top: 20px;
+            width: 55px;
+            input {
+              background-color: $decorative-01 !important;
+              color: $text-01 !important;
+              padding: 0 12px;
+              text-align: center;
+              border-bottom: 1px solid $text-01 !important;
+            }
+          }
+          .slider-max-button {
+            position: absolute;
+            right: 72px;
+            top: 40px;
+            padding: 0 9px;
+            min-height: 34px;
+            background-color: $ui-02;
+            &:hover {
+              color: $text-02;
+              text-decoration: none;
+            }
+          }
+        }
+        .pool-amount {
+          // border-top: 1px solid $ui-background;
+          width: 100%;
+          padding: 15px;
+          .amount-row {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 15px;
+            .label {
+              display: flex;
+              svg {
+                margin-left: 5px;
+                margin-right: 5px;
+              }
+            }
+            .value {
+              font-weight: 600;
+              display: flex;
+              svg {
+                margin-left: 5px;
+                margin-right: 5px;
+              }
+            }
+          }
+        }
+      }
+      .pool-divider {
+        display: flex;
+        justify-content: center;
+        padding-top: 15px;
+        padding-bottom: 15px;
+      }
+      .pool-v3 {
+        .pool-header {
+          .version {
+            background-color: #D3FA74;
+          }
+        }
+      }
+      .pool-footer {
+        padding: 15px;
+        border-top: 1px solid $ui-background;
+        .amount-row {
+          display: flex;
+          justify-content: space-between;
+          .value {
+            font-size: 16px;
+            font-weight: 600;
+          }
+        }
+      }
+    }
+    .migrate-pool-action {
+      .bx--row {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+      }
+      .cv-column {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+      }
+      button {
+        border: none;
+      }
+      .btn-cancel {
+        border-top: 1px solid $ui-background;
+        border-right: 1px solid $ui-background;
+      }
+      .btn-migrate {
+        width: 100%;
+        min-width: 125px;
+        min-height: 40px;
+        padding: 20px 18px !important;
+        font-size: 1rem !important;
+        border-top: 1px solid $ui-background;
+        &:disabled {
+          color: $text-05 !important;
+          background-color: $hover-secondary !important;
+        }
+      }
+    }
+  }
+}

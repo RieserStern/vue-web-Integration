@@ -1,0 +1,311 @@
+.page-vault-detail {
+  .main-content {
+    margin: 2% auto;
+    max-width: 1088px;
+    padding: 0;
+    .cv-row {
+      margin: 0;
+    }
+  }
+  .pair-left-wrapper {
+    margin-right: 15px;
+    background-color: $ui-01;
+
+    .bx--chart-holder {
+      background: $ui-01;
+      color: $text-01;
+      .bx--cc--area path.area {
+        fill: $ui-03 !important;
+        stroke: $ui-03 !important;
+      }
+      .bx--cc--meter rect.container {
+        fill: $ui-03;
+      }
+      .bx--cc--gauge path.arc-background {
+        fill: $ui-03;
+      }
+      .bx--cc--meter-title text.meter-title,
+      .bx--cc--meter-title text.percent-value {
+        fill: $text-01;
+      }
+      .bx--cc--grid rect.chart-grid-backdrop {
+        fill: transparent !important;
+        stroke: transparent;
+      }
+      .bx--cc--grid g.x.grid g.tick line,
+      .bx--cc--grid g.y.grid g.tick line {
+        stroke: $ui-03;
+      }
+      .bx--cc--axes g.axis {
+        g.tick text {
+          font-weight: normal !important;
+          fill: $text-01;
+        }
+        .axis-title {
+          fill: $text-01;
+        }
+      }
+      g.bx--cc--legend g.legend-item text {
+        fill: $text-01;
+      }
+      g.bx--cc--scatter circle.dot.unfilled {
+        fill: $ui-background;
+      }
+      .bx--cc--ruler line.ruler-line {
+        stroke: $text-01;
+      }
+    }
+    @media screen and (max-width: 42rem) {
+      margin-right: unset;
+    }
+  }
+  .pair-tvl-wrapper {
+    padding: 20px 20px;
+    .pair-name-container {
+      display: flex;
+    }
+    .pair-name {
+      color: $text-01;
+      margin-top: 0;
+      font-size: 1.75rem;
+      font-weight: 400;
+    }
+    .chart-meter {
+      margin-top: 20px;
+      margin-bottom: 20px;
+      position: relative;
+      .bx--chart-holder {
+        background-color: $ui-01;
+        .bx--cc--meter rect.container {
+          fill: $ui-04;
+        }
+        .bx--cc--meter-title {
+          .meter-title {
+            font-weight: normal;
+            font-size: 14px;
+          }
+          .percent-value {
+            display: none;
+          }
+        }
+      }
+      .meter-percentage-value {
+        position: absolute;
+        top: 4px;
+        right: 0;
+        color: $text-01;
+      }
+      .meter-bottom-label {
+        position: absolute;
+        left: 0;
+        margin-top: 5px;
+        color: $text-01;
+      }
+      .meter-bottom-value {
+        position: absolute;
+        right: 0;
+        margin-top: 5px;
+        color: $text-01;
+      }
+    }
+    .pair-svg-container {
+      height: 30px;
+      width: 60px;
+      position: relative;
+      .pair-svg {
+        background-color: #c4c4c4;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+      }
+      .pair-svg:last-child {
+        position: absolute;
+        background-color: $ui-05;
+        top: 0px;
+        right: 10px;
+      }
+    }
+  }
+  .price-grid {
+    .cv-column {
+      padding: 20px 16px;
+      border: 1px solid $ui-background;
+      border-left-style: none;
+      span {
+        color: $text-02;
+        margin-bottom: 5px;
+        display: block;
+        &.has-icon {
+          display: flex;
+          align-items: flex-end;
+          svg {
+            margin: 0 0 1px 4px;
+            width: 14px;
+            height: 14px;
+          }
+        }
+      }
+      h4 {
+        color: $text-01;
+        margin-bottom: 5px;
+      }
+      @media screen and (max-width: 42rem) {
+        border-right-style: none;
+        border-bottom-style: none;
+      }
+    }
+    .cv-column:last-child {
+      border-right-style: none;
+    }
+  }
+  .price-order-wrapper {
+    padding: 30px 15px 15px 20px;
+    border-bottom: 1px solid $ui-background;
+  }
+  .graph-container {
+    .bx--chart-holder {
+      background-color: $ui-01;
+      .bx--cc--grid rect.chart-grid-backdrop {
+        fill: $ui-01;
+      }
+      g.bx--cc--area {
+        path {
+          fill: $ui-04 !important;
+        }
+      }
+    }
+  }
+  .lp-hodl-wrapper {
+    padding: 30px 15px 15px 20px;
+  }
+  .section-title {
+    font-size: 15px;
+    font-weight: 600;
+    color: $text-01;
+    margin-bottom: 15px;
+  }
+  .pair-right-wrapper {
+    position: sticky;
+    top: 75px;
+    .section-content {
+      background-color: $ui-01;
+      padding: 53px 0 30px;
+
+      .total-section {
+        text-align: center;
+        padding-bottom: 29px;
+        border-bottom: 1px solid $ui-background;
+        span {
+          color: $text-01;
+          font-size: 15px;
+          font-weight: 500;
+          display: flex;
+          align-items: flex-end;
+          justify-content: center;
+          svg {
+            margin-left: 2px;
+          }
+        }
+        h3 {
+          color: $text-01;
+          margin-top: 15px;
+        }
+      }
+      .value-section {
+        margin-top: 16px;
+        padding: 0 16px;
+        font-size: 14px;
+        .title {
+          color: $text-01;
+        }
+        .value {
+          color: $text-01;
+          font-weight: 600;
+          float: right;
+
+          &.primary-text {
+            color: #ff0038;
+          }
+        }
+        .cv-column {
+          margin-top: 10px;
+        }
+      }
+    }
+    .deposit-withdraw {
+      margin-top: 1px;
+
+      .button-wrapper {
+        width: 100%;
+        display: flex;
+        .cv-button {
+          min-width: 160px !important;
+        }
+        .bx--btn {
+          justify-content: center;
+          flex: 1;
+          margin-right: 1px;
+          max-width: inherit;
+          padding: 0;
+        }
+        .withdraw-button {
+          background-color: $ui-05 !important;
+          color: $text-01;
+          margin: 0;
+          margin-left: 1px;
+        }
+        .bx--btn__icon {
+          right: 2rem;
+        }
+      }
+      .insurance {
+        font-size: 12px;
+        color: $icon-02;
+        margin-top: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        svg {
+          margin-right: 4px;
+        }
+      }
+      .additional-apy {
+        margin-top: 15px;
+        padding-top: 10px;
+        background-color: $ui-01;
+        color: $text-01;
+        text-align: center;
+        width: 100%;
+        span {
+          display: block;
+          margin-top: 5px;
+        }
+        .btn-subscribe {
+          margin-top: 10px;
+          width: 100%;
+          max-width: 100%;
+          background-color: $ui-02 !important;
+          color: $text-01 !important;
+          border-top: 1px solid $ui-background;
+        }
+      }
+    }
+    .mobile-deposit-withdraw {
+      display: none;
+    }
+    @media screen and (max-width: 768px) {
+      padding: 10px;
+    }
+    @media screen and (max-width: 42rem) {
+      .deposit-withdraw {
+        display: none;
+      }
+      .mobile-deposit-withdraw {
+        margin-bottom: 35px;
+        margin-top: 0;
+        display: flex;
+      }
+    }
+  }
+}

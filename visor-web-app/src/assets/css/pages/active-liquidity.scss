@@ -1,0 +1,434 @@
+.liquidity-page {
+  font-family: "IBM Plex Sans" !important;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-color: $ui-background;
+  .bx--number
+    input[type="number"]:focus
+    ~ .bx--number__controls
+    .bx--number__control-btn:hover {
+    outline: none !important;
+  }
+  &.loading {
+    display: flex;
+    align-items: center;
+  }
+  .bx--form__helper-text {
+    color: $text-02;
+    position: absolute;
+    bottom: -20px;
+    top: 2px !important;
+  }
+
+  .bx--text-input__field-wrapper[data-invalid]
+    > .bx--text-input--invalid:not(:focus) {
+    outline: solid 2px transparent;
+  }
+
+  .bx--form-requirement {
+    position: absolute;
+    bottom: -20px;
+  }
+
+  .bx--text-input__field-wrapper .bx--text-input--invalid {
+    padding-right: 1rem;
+  }
+
+  // Hide input arrows
+  .bx--text-input__field-wrapper {
+    .bx--text-input[type="number"] {
+      &::-webkit-outer-spin-button,
+      &::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+      }
+    }
+  }
+
+  // .cv-button.minus,
+  // .cv-button.plus {
+  //   height: 37px;
+  // }
+  .liquidity-loading {
+    .cv-loading {
+      background-color: rgba($ui-background, 0.5);
+      .bx--loading__stroke {
+        stroke: #ff0038;
+      }
+      .bx--loading__svg {
+        circle {
+          stroke-dasharray: 140;
+        }
+      }
+    }
+    &.text {
+      color: $text-01;
+      position: fixed;
+      top: 60px;
+      left: 0;
+      z-index: 6000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .liquidity-body {
+    max-width: 445px;
+    margin: auto;
+    .liquidity-header {
+      h2 {
+        font-size: 29px;
+        color: $text-01;
+        font-family: "IBM Plex Sans";
+        margin: 10px 0;
+        @media screen and (max-width: 42rem) {
+          font-size: 26px;
+        }
+      }
+      p {
+        font-family: "IBM Plex Sans";
+        font-size: 16px;
+        color: $text-01;
+        white-space: nowrap;
+        @media screen and (max-width: 42rem) {
+          white-space: break-spaces;
+        }
+      }
+    }
+    .liquidity-content {
+      // .cv-notifiation {
+      //   margin-right: unset;
+      //   width: 300px;
+      //   top: 50px;
+      //   right: 20px;
+      //   position: absolute;
+
+      //   @media only screen and (max-width: 576px) {
+      //     right: 50%;
+      //     transform: translate(50%, 0);
+      //   }
+      //   h3 {
+      //     margin-top : 16px;
+      //   }
+      //   &.bx--toast-notification--success {
+      //     &.success {
+      //       border-left: 3px solid #ff0038;
+      //       .bx--toast-notification__icon {
+      //         fill: #ff0038 !important;
+      //       }
+      //     }
+      //     &.error {
+      //       border-left: 3px solid $support-01;
+      //       .bx--toast-notification__icon {
+      //         fill: $support-01 !important;
+      //       }
+      //     }
+      //   }
+      // }
+      .timeInput {
+        display: flex;
+        margin-top: 40px;
+        input:focus {
+          outline: none;
+        }
+        .bx--form-item:nth-child(1) {
+          flex-direction: unset;
+        }
+        .part_section:nth-child(1) {
+          margin-right: 1px;
+          width: 50%;
+        }
+        .part_section:nth-child(2) {
+          padding-left: 1px;
+          padding-right: 1px;
+          width: 50%;
+        }
+
+        .part_section {
+          .bx--form-item {
+            margin-top: 0px;
+            button {
+              // top: 2px !important;
+            }
+          }
+        }
+        svg {
+          fill: $text-01;
+        }
+        .bx--time-picker {
+          .bx--time-picker__select:nth-child(3) {
+            .bx--select-input {
+              width: 213px;
+            }
+          }
+        }
+        .bx--select-input {
+          background-color: $ui-01;
+          color: $text-01;
+          option {
+            color: $text-01;
+          }
+        }
+        // number input styles
+        .bx--number {
+          .bx--label {
+            display: none;
+          }
+          .bx--number__rule-divider {
+            display: none;
+          }
+          .bx--number__input-wrapper {
+            input {
+              border-bottom: none;
+            }
+          }
+        }
+        .bx--number__control-btn {
+          border-bottom: none;
+          &::before,
+          &::after {
+            background-color: inherit;
+          }
+          &:hover {
+            background-color: $hover-ui !important;
+          }
+        }
+      }
+      .numberInputs {
+        display: flex;
+        .number:nth-child(1) {
+          margin-right: 10px;
+        }
+        .number:nth-child(2) {
+          margin-left: 10px;
+        }
+        svg {
+          fill: $text-01;
+        }
+        .bx--number {
+          .bx--number__rule-divider {
+            display: none;
+          }
+          .bx--number__input-wrapper {
+            input {
+              padding-right: 2.5rem;
+              border-bottom: none;
+            }
+          }
+        }
+        .bx--number__control-btn {
+          border-bottom: none;
+          &::before,
+          &::after {
+            background-color: inherit;
+          }
+          &:hover {
+            background-color: $hover-ui !important;
+          }
+        }
+      }
+      .bx--dropdown {
+        outline: none;
+      }
+      .bx--list-box__menu {
+        outline: none;
+      }
+      .bx--form-item {
+        position: relative;
+        &.textinputs {
+          display: flex;
+          justify-content: space-between;
+          flex-direction: row;
+          align-items: flex-end;
+          .cv-text-input {
+            input:focus {
+              outline: solid 2px $text-01 !important;
+            }
+          }
+          .cv-text-input:nth-child(1) {
+            padding-right: 10px;
+          }
+          .cv-text-input:nth-child(2) {
+            padding-left: 10px;
+          }
+        }
+        &.dropdown {
+          margin-top: 20px;
+          .bx--form-item {
+            width: 100%;
+          }
+        }
+        &.number {
+          display: flex;
+          justify-content: space-between;
+          flex-direction: row;
+          align-items: flex-end;
+          .cv-text-input {
+            input:focus {
+              outline: solid 2px $text-01 !important;
+            }
+          }
+          .cv-button {
+            position: absolute;
+            right: 76px;
+            top: 46px;
+            bottom: 2px;
+            background: rgba($ui-01, 1) !important;
+            color: $text-01 !important;
+            min-height: 2rem;
+
+            border-width: 0 !important;
+            box-shadow: unset !important;
+            &:focus {
+              border-width: 0 !important;
+              box-shadow: unset !important;
+            }
+            &:hover {
+              background-color: $hover-ui !important;
+            }
+            &.minus,
+            &.plus {
+              color: $text-01 !important;
+              min-width: 35px;
+              display: inline-block;
+              text-align: center;
+            }
+            &.minus {
+              right: 56px;
+            }
+            &.plus {
+              right: 92px;
+            }
+          }
+        }
+        .v-line {
+          width: 1px;
+          height: 15px;
+          background: $text-05;
+          position: absolute;
+          right: 30px;
+          bottom: 10px;
+        }
+        margin-top: 20px;
+        label,
+        .bx--label {
+          color: $text-02;
+        }
+        input {
+          background: rgba($ui-01, 1);
+          color: $text-01;
+        }
+        .bx--dropdown,
+        ul {
+          background-color: $ui-01;
+          color: $text-01;
+        }
+        ul {
+          &:focus {
+            outline-color: $text-01;
+          }
+          li {
+            width: 100%;
+            display: block;
+            a {
+              color: $text-02;
+              // border-top: 1px solid rgb(57, 57, 57);
+            }
+            &:hover {
+              background-color: rgba($ui-01, 1);
+              // background-color: rgb(53, 53, 53);
+              a {
+                color: $text-01;
+                border-bottom-color: $skeleton-01;
+              }
+            }
+            a:focus {
+              outline-width: 0;
+            }
+            &.bx--dropdown--selected {
+              background-color: $skeleton-01;
+            }
+          }
+        }
+        .bx--dropdown {
+          button:focus {
+            outline: none;
+          }
+          button {
+            .bx--list-box__menu-icon {
+              svg {
+                fill: $text-01;
+              }
+            }
+            span {
+              color: $text-01;
+            }
+          }
+        }
+        .bx--dropdown--open {
+          outline-color: $text-01;
+        }
+        .bx--number__controls {
+          // flex-flow: row-reverse;
+          width: 2.5rem;
+
+          .bx--number__control-btn.down-icon {
+            display: none;
+          }
+          button {
+            &:focus {
+              outline: none;
+            }
+          }
+        }
+      }
+    }
+    .liquidity-footer {
+      margin-top: 40px;
+      display: flex;
+      grid-row: -1/-1;
+      grid-column: 1/-1;
+      justify-content: flex-end;
+      height: 4rem;
+      button {
+        border: solid 1px transparent !important;
+        box-shadow: unset !important;
+        flex: 0 1 50%;
+        max-width: none;
+        height: 4rem;
+        margin: 0;
+        padding-top: 1rem;
+        padding-bottom: 2rem;
+        &:disabled {
+          color: $text-05 !important;
+          background-color: $hover-secondary !important;
+        }
+      }
+    }
+  }
+
+  .bx--modal {
+    height: calc(100vh - 80px);
+    .bx--modal-container {
+      @media (min-width: 82rem) {
+        width: 25%;
+      }
+      .bx--modal-header__heading,
+      .bx--modal-content {
+        color: $text-01;
+      }
+      .bx--modal-close {
+        &:hover {
+          background-color: $interactive-02;
+        }
+        .bx--modal-close__icon {
+          fill: $text-01;
+        }
+      }
+      background-color: $ui-01;
+    }
+  }
+}

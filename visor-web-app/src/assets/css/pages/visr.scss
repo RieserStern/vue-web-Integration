@@ -1,0 +1,295 @@
+.liquidity-page {
+  font-family: "IBM Plex Sans" !important;
+  width: 100%;
+  // min-height: calc(100% - 81px);
+  display: flex;
+  align-items: center;
+  background-color: $ui-background;
+  &.loading {
+    display: flex;
+    align-items: center;
+  }
+  .liquidity-loading {
+    .cv-loading {
+      background-color: rgba($ui-background, 0.4);
+      &.bx--loading-overlay {
+        position: absolute;
+      }
+      .bx--loading__stroke {
+        stroke: #ff0038;
+      }
+      .bx--loading__svg {
+        circle {
+          stroke-dasharray: 140;
+        }
+      }
+    }
+    &.text {
+      color: $text-01;
+      position: fixed;
+      top: 60px;
+      left: 0;
+      z-index: 6000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .liquidity-body {
+    position: relative;
+    max-width: 390px;
+    margin: auto;
+    @media only screen and (max-width: 576px) {
+      padding: 0 1rem;
+    }
+    .liquidity-header {
+      h2 {
+        font-size: 29px;
+        color: $text-01;
+        font-family: "IBM Plex Sans";
+        margin: 10px 0;
+      }
+      p {
+        font-family: "IBM Plex Sans";
+        font-size: 16px;
+        color: $text-01;
+        white-space: nowrap;
+        @media only screen and (max-width: 576px) {
+          white-space: break-spaces;
+        }
+      }
+    }
+    .liquidity-content {
+      .timeInput {
+        display: flex;
+        margin-top: 40px;
+        input:focus {
+          outline: none;
+        }
+        .bx--form-item:nth-child(1) {
+          flex-direction: unset;
+        }
+        .part_section:nth-child(1) {
+          margin-right: 1px;
+          width: 28%;
+        }
+        .part_section:nth-child(2) {
+          padding-left: 1px;
+          padding-right: 1px;
+          width: 28%;
+        }
+        .part_section:nth-child(3) {
+          padding-left: 1px;
+          width: 44%;
+        }
+        svg {
+          fill: $text-01;
+        }
+        .bx--time-picker {
+          .bx--time-picker__select:nth-child(3) {
+            .bx--select-input {
+              width: 213px;
+            }
+          }
+        }
+        .bx--select-input {
+          background-color: $ui-01;
+          color: $text-01;
+          option {
+            color: $text-01;
+          }
+        }
+      }
+      .numberInputs {
+        display: flex;
+        .number:nth-child(1) {
+          margin-right: 10px;
+        }
+        .number:nth-child(2) {
+          margin-left: 10px;
+        }
+      }
+      .bx--dropdown {
+        outline: none;
+      }
+      .bx--list-box__menu {
+        outline: none;
+      }
+      .bx--form-item {
+        position: relative;
+        &.textinputs {
+          display: flex;
+          justify-content: space-between;
+          flex-direction: row;
+          align-items: flex-end;
+          .cv-text-input {
+            input:focus {
+              outline: solid 2px $text-01 !important;
+            }
+          }
+          .cv-text-input:nth-child(1) {
+            padding-right: 10px;
+          }
+          .cv-text-input:nth-child(2) {
+            padding-left: 10px;
+          }
+        }
+        &.dropdown {
+          margin-top: 20px;
+          .bx--form-item {
+            width: 100%;
+          }
+        }
+        &.number {
+          display: flex;
+          justify-content: space-between;
+          flex-direction: row;
+          align-items: flex-end;
+          .cv-text-input {
+            input:focus {
+              outline: solid 2px $text-01 !important;
+            }
+          }
+          .cv-button {
+            position: absolute;
+            right: 76px;
+            top: 46px;
+            bottom: 2px;
+            background: rgba($ui-01, 1) !important;
+            color: $text-01 !important;
+            min-height: 2rem;
+
+            border-width: 0 !important;
+            box-shadow: unset !important;
+            &:focus {
+              border-width: 0 !important;
+              box-shadow: unset !important;
+            }
+            &:hover {
+              background-color: $hover-ui !important;
+            }
+            &.minus,
+            &.plus {
+              color: $text-01 !important;
+              min-width: 35px;
+              display: inline-block;
+              text-align: center;
+            }
+            &.minus {
+              right: 96px;
+            }
+            &.plus {
+              right: 60px;
+            }
+          }
+          .cv-tag {
+            position: absolute;
+            right: 2px;
+            top: 46px;
+            bottom: 2px;
+            background: rgba($ui-01, 1) !important;
+            color: $text-01 !important;
+            min-height: 2rem;
+
+            border-width: 0 !important;
+            box-shadow: unset !important;
+          }
+        }
+        .v-line {
+          width: 1px;
+          height: 15px;
+          background: $text-05;
+          position: absolute;
+          right: 30px;
+          bottom: 10px;
+        }
+        margin-top: 20px;
+        label,
+        .bx--label {
+          color: $text-02;
+        }
+        input {
+          background: rgba($ui-01, 1);
+          color: $text-01;
+        }
+        .bx--dropdown,
+        ul {
+          background-color: $ui-01;
+          color: $ui-05;
+        }
+        ul {
+          &:focus {
+            outline-color: $text-01;
+          }
+          li {
+            width: 100%;
+            display: block;
+            a {
+              color: $text-02;
+              border-top: 1px solid $ui-02;
+            }
+            &:hover {
+              background-color: rgba($ui-01, 1);
+              // background-color: $skeleton-01;
+              a {
+                color: $text-01;
+                border-bottom-color: $skeleton-01;
+              }
+            }
+            a:focus {
+              outline-width: 0;
+            }
+            &.bx--dropdown--selected {
+              background-color: $skeleton-01;
+            }
+          }
+        }
+        .bx--dropdown {
+          button:focus {
+            outline: none;
+          }
+          button {
+            .bx--list-box__menu-icon {
+              svg {
+                fill: $ui-05;
+              }
+            }
+            span {
+              color: $ui-05;
+            }
+          }
+        }
+        .bx--dropdown--open {
+          outline-color: $text-01;
+        }
+        .bx--number__controls {
+          button {
+            &:focus {
+              outline: none;
+            }
+          }
+        }
+      }
+    }
+    .liquidity-footer {
+      margin-top: 40px;
+      display: flex;
+      grid-row: -1/-1;
+      grid-column: 1/-1;
+      justify-content: flex-end;
+      height: 4rem;
+      button {
+        border: solid 1px transparent !important;
+        box-shadow: unset !important;
+        flex: 0 1 50%;
+        max-width: none;
+        height: 4rem;
+        margin: 0;
+        padding-top: 1rem;
+        padding-bottom: 2rem;
+      }
+    }
+  }
+}

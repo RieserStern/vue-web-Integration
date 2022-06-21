@@ -1,0 +1,94 @@
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #2c3e50;
+  background: $ui-background;
+  width: 100%;
+  min-height: 100vh;
+  padding-top: 48px;
+  :focus {
+    outline: none !important;
+    box-shadow: none;
+    border-color: transparent;
+  }
+
+  .bx--list-box__menu-icon {
+    display: inline-block;
+  }
+}
+.blur {
+  filter: blur(5px);
+}
+
+#nav {
+  padding: 30px;
+
+  a {
+    font-weight: bold;
+    color: #2c3e50;
+
+    &.router-link-exact-active {
+      color: #42b983;
+    }
+  }
+}
+
+.gray-button,
+.regular-button {
+  padding-left: 20px;
+  background: $inverse-02;
+  color: $text-03;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  font-size: 17px;
+  cursor: pointer;
+  svg {
+    margin-right: 15px;
+    font-size: 21px;
+  }
+  &.disabled {
+    cursor: wait;
+    &:hover {
+      background-color: #ff0038;
+    }
+  }
+}
+.regular-button {
+  background-color: #f4f4f4;
+  color: black;
+  &:hover {
+    background-color: #e0e0e0;
+  }
+}
+.bx--inline-loading {
+  justify-content: center;
+  .bx--inline-loading__animation {
+    width: 2.5rem;
+    height: 2.5rem;
+    .bx--loading {
+      width: 2.5rem;
+      height: 2.5rem;
+      .bx--loading__svg {
+        stroke: #ff0038;
+        .bx--loading__background {
+          stroke: $ui-02;
+          stroke-dashoffset: -22;
+        }
+        .bx--loading__stroke {
+          stroke: unset;
+          stroke-dashoffset: 160;
+          stroke-width: 8;
+        }
+      }
+    }
+  }
+}
+.bx--btn--primary {
+  background-color: #f4f4f4 !important;
+  color: #000;
+  &:hover {
+    background-color: #e0e0e0 !important;
+  }
+}

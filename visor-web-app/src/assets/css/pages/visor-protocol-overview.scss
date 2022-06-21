@@ -1,0 +1,175 @@
+.visor-protocol-overview {
+  .page-section-title {
+    margin-bottom: 15px;
+    margin-top: 10px;
+    font-size: 25px;
+  }
+  .column-inner-wrapper.left {
+    margin-right: var(--box-padding);
+    .bx--chart-holder {
+      height: 346px !important;
+    }
+  }
+  .protocol-right {
+    .column-inner-wrapper {
+      padding: 1.2rem;
+    }
+    .cv-column {
+      margin-bottom: var(--box-padding);
+    }
+  }
+  .no-mr {
+    margin-right: 0 !important;
+  }
+  .overview-description {
+    margin-right: var(--box-padding);
+    min-height: 200px;
+    padding-top: 1.5rem !important;
+    .title {
+      font-size: 25px;
+    }
+    .sub-description {
+      margin-top: 30px;
+      line-height: 20px;
+    }
+  }
+  .staking-tabs-container {
+    padding: 1rem;
+    margin-bottom: 0 !important;
+    .column-inner-wrapper {
+      margin-right: var(--box-padding);
+    }
+    .cv-row {
+      height: 100%;
+      .cv-column {
+        margin-bottom: 0;
+      }
+    }
+    .cv-tab.bx--tabs--scrollable {
+      padding-bottom: 3px;
+      .bx--tabs__overflow-indicator--right {
+        background-image: none;
+      }
+      .bx--tabs__overflow-indicator--left {
+        background-image: none;
+      }
+      .bx--tab--overflow-nav-button svg {
+        fill: $text-01;
+      }
+    }
+    .bx--tabs--scrollable__nav-link {
+      color: $text-01;
+      font-size: 15px;
+    }
+    .bx--tabs__nav-item--selected {
+      .bx--tabs--scrollable__nav-link {
+        color: $text-01;
+        font-size: 15px;
+        border-bottom: 2px solid #ff0038;
+        &:focus {
+          border-bottom: 2px solid #ff0038 !important;
+        }
+      }
+    }
+    .cv-tabs__panels {
+      padding-top: 25px;
+      .cv-text-input {
+        label {
+          margin-left: 0;
+          color: $text-01;
+        }
+        .bx--form__helper-text {
+          color: $text-01;
+        }
+        input {
+          background-color: $ui-03 !important;
+        }
+      }
+      .btn-stake {
+        margin-top: 16px;
+        margin-left: 15px;
+        min-width: 125px;
+        min-height: 40px;
+        padding: 7px 18px;
+      }
+    }
+    .total-staked-value-container {
+      .title {
+        margin-top: 40px;
+      }
+    }
+  }
+  .total-staked-value-container {
+    text-align: center;
+    .title {
+      font-size: 15px;
+      font-weight: 500;
+      display: block;
+    }
+    .value {
+      display: block;
+      font-size: 40px;
+      font-weight: 500;
+      margin-top: 5px;
+    }
+    .sub-value {
+      display: block;
+      font-size: 10px;
+      color: $text-02;
+      margin-top: 10px;
+    }
+  }
+  .visr-staked-container-left {
+    margin-right: var(--box-padding);
+    .initial-staked-container {
+      margin-top: 30px;
+      .initial-staked-value {
+        margin-bottom: 10px;
+        .value {
+          float: right;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+  .visr-staked-container-right {
+    padding: 0 !important;
+    .title {
+      color: $text-02;
+      display: block;
+    }
+    .value {
+      font-size: 35px;
+      display: block;
+      margin-top: 8px;
+      margin-bottom: 8px;
+    }
+    .section-column {
+      background-color: $ui-01;
+      margin-right: var(--box-padding);
+      padding: 1.1rem;
+      height: 100%;
+    }
+  }
+  // Mobile view
+  @media screen and (max-width: 42rem) {
+    .column-inner-wrapper {
+      margin-right: 0 !important;
+    }
+    .cv-column {
+      margin-bottom: var(--box-padding) !important;
+    }
+    .section-column {
+      margin-right: 0 !important;
+      text-align: center;
+    }
+    .btn-stake {
+      margin-left: 0 !important;
+      width: 100%;
+      min-width: 100%;
+      justify-content: center;
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+}

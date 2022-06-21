@@ -1,0 +1,198 @@
+.strategy-page {
+  .row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: flex-end;
+    @media only screen and (max-width: 576px) {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  }
+  
+  .column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+    @media only screen and (max-width: 576px) {
+      align-items: center;
+    }
+  }
+  
+  .mobile-break {
+    display: none;
+    @media only screen and (max-width: 576px) {
+      display: block;
+    }
+  }
+  
+  .chart {
+    width: 100%;
+    min-height: calc(100vh - 125px);
+    padding: 100px 0;
+    overflow: auto;
+    background-color: $ui-background;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .chart-inner {
+      width: 80%;
+      display: flex;
+      flex-direction: column;
+      color: $text-04;
+      max-width: 1000px;
+      @media only screen and (max-width: 576px) {
+        width: 95%;
+        .top {
+          flex-direction: column;
+          .left {
+            margin-bottom: 10px;
+          }
+          .right {
+            margin-left: 0 !important;
+          }
+        }
+      }
+      .page-title-wrapper {
+        padding-bottom: 40px;
+        margin-bottom: 20px;
+        border-bottom: 1px solid $active-secondary;
+  
+        p {
+          margin-top: 8px;
+          font-size: 0.9rem;
+        }
+        .apy-percent {
+          font-size: 2.5rem;
+          text-align: right;
+          font-family: IBM Plex Mono;
+          font-weight: 200;
+          @media only screen and (max-width: 576px) {
+            margin-top: 10px;
+          }
+        }
+      }
+      .chart-title,
+      .chart-description {
+        color: $text-01;
+      }
+      .chart-title {
+        font-size: 20px;
+      }
+      .chart-description {
+        margin: 10px 0;
+      }
+      .chart-content {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
+        justify-content: space-around;
+      }
+      .top {
+        display: flex;
+        margin-bottom: 10px;
+        .left,
+        .right {
+          flex-grow: 1;
+        }
+        .left {
+          padding: 20px;
+          background: $ui-01;
+          display: flex;
+          flex-direction: column;
+        }
+        .right {
+          margin-left: 10px;
+          display: flex;
+          flex-direction: column;
+          .right-top {
+            padding: 20px;
+            margin-bottom: 10px;
+            background: $ui-01;
+          }
+          .right-bottom {
+            padding: 20px;
+            background: $ui-01;
+          }
+        }
+      }
+      .bottom {
+        background: $ui-01;
+        padding: 20px;
+      }
+      .chart-wrapper {
+        background: $ui-background;
+        padding: 20px;
+        margin-bottom: 20px;
+  
+        .bx--chart-holder {
+          background: $ui-background;
+          padding-top: 15px;
+          .bx--cc--area path.area {
+            fill: $ui-03 !important;
+            stroke: $ui-03 !important;
+          }
+        }
+        .chart-tooltip {
+          background: $active-secondary;
+          color: $text-04;
+          min-width: 180px;
+          p {
+            padding: 5px 10px;
+            border-bottom: 1px $text-05 solid;
+            &:last-child {
+              border-bottom: none;
+            }
+            span {
+              float: right;
+              padding: 0 2px;
+            }
+          }
+        }
+      }
+      .bx--chart-holder {
+        background: $ui-01;
+        color: $text-01;
+        .bx--cc--meter rect.container {
+          fill: $ui-03;
+        }
+        .bx--cc--gauge path.arc-background {
+          fill: $ui-03;
+        }
+        .bx--cc--meter-title text.meter-title,
+        .bx--cc--meter-title text.percent-value {
+          fill: $text-01;
+        }
+        .bx--cc--grid rect.chart-grid-backdrop {
+          fill: $ui-background !important;
+          stroke: $ui-background;
+        }
+        .bx--cc--grid g.x.grid g.tick line,
+        .bx--cc--grid g.y.grid g.tick line {
+          stroke: $active-secondary;
+        }
+        .bx--cc--axes g.axis {
+          g.tick text {
+            font-weight: normal !important;
+            fill: $text-01;
+          }
+          .axis-title {
+            fill: $text-01;
+          }
+        }
+        g.bx--cc--legend g.legend-item text {
+          fill: $text-01;
+        }
+        g.bx--cc--scatter circle.dot.unfilled {
+          fill: $ui-background;
+        }
+        .bx--cc--ruler line.ruler-line {
+          stroke: $text-01;
+        }
+      }
+    }
+  }
+}

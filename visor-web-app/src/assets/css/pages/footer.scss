@@ -1,0 +1,17 @@
+.footer {
+  z-index: 8000;
+  display: flex;
+  align-items: center;
+  height: 5rem;
+  // background: var(--header-footer-bg-color);
+  background: transparent;
+  color: $text-01;
+  padding: 40px;
+  .footer-social-links {
+    margin-left: auto;
+    a {
+      color: $text-01;
+      margin-left: 8px;
+    }
+  }
+}

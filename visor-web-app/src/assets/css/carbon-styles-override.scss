@@ -1,0 +1,93 @@
+#app {
+  .bx--cc--skeleton rect.chart-skeleton-backdrop {
+    fill: transparent;
+  }
+
+  .bx--text-input {
+    background-color: $ui-01;
+    border-bottom: none;
+    color: $text-01;
+  }
+  .bx--skeleton__text {
+    background: $ui-01;
+    &::before {
+      background: $ui-04;
+    }
+  }
+  .cv-button {
+    background-color: $ui-04;
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    &.normal,
+    &.bx--batch-summary__cancel {
+      font-size: 14px;
+    }
+  }
+
+  .bx--label {
+    color: $text-01;
+  }
+
+  .bx--dropdown {
+    border: none;
+    .bx--dropdown-item {
+      &:hover {
+        background-color: $ui-03;
+        .bx--dropdown-link {
+          border-bottom-color: transparent;
+        }
+      }
+    }
+    .bx--list-box__label,
+    .bx--dropdown-link {
+      color: $text-01;
+      border: none;
+    }
+    .bx--list-box__menu-icon > svg {
+      fill: $text-01;
+    }
+    .bx--list-box__menu {
+      background-color: $ui-01;
+    }
+  }
+
+  .cv-side-nav .bx--side-nav__items {
+    padding: 0;
+
+    .bx--side-nav__header-navigation {
+      margin-bottom: 0;
+      .cv-header-menu-item {
+        width: 100%;
+        .bx--header__menu-item {
+          padding: 1rem;
+          border-bottom: 1px solid $ui-03;
+        }
+      }
+    }
+  }
+
+  .tvl-chart.ccv-stacked-bar-chart {
+    .bx--cc--axes {
+      .axis.bottom {
+        .ticks {
+          @media only screen and (max-width: 767px) {
+            .tick:nth-child(odd) {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .bx--pagination {
+    width: 100%;
+
+    .bx--pagination__left > *,
+    .bx--pagination__right > * {
+      display: block;
+    }
+  }
+}

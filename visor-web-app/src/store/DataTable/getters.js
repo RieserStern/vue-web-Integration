@@ -1,0 +1,15 @@
+export default {
+  getDataTable: state => state.dataTable,
+  getFilteredData: state => state.filteredData,
+  getExpandedData: state => state.expandedData,
+  getLoading: state => state.loading,
+  getIsLoading: state => state.isLoading,
+  getUpdating: state => state.updating,
+  getToggleButton: state => state.toggleButton,
+  getMultipleVisors: state => state.multiple_visors,
+  getIsInitialLoaded: state => state.isInitialLoaded,
+  getIsTableLoaded: state => state.isTableLoaded,
+  getIsConnected: state => state.isConnected,
+  getEtherscanVisorLink: state => state.etherscanVisorLink,
+  getIsInitializedPresigined: state => state.isInitializedPresigined,
+};

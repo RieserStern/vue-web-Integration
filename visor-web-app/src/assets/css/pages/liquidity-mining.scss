@@ -1,0 +1,279 @@
+.liquidity-mining {
+  max-width: 1088px;
+  margin: 2% auto;
+  margin-top: 5rem;
+  min-height: 80vh;
+  padding: 0;
+  color: $text-01;
+  background: $ui-background;
+  .top-header {
+    margin-bottom: var(--box-padding);
+    .top-header-container {
+      padding-top: 0.5rem;
+      padding-bottom: 0.5rem;
+      position: relative;
+      .top-header-title {
+        font-size: 25px;
+      }
+      .top-learn-more {
+        display: flex;
+        color: $text-02;
+        position: absolute;
+        top: 14px;
+        right: 0;
+        svg {
+          display: block;
+          margin-left: 5px;
+        }
+      }
+    }
+  }
+  .bx--row {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .cv-column {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .column-inner-wrapper {
+    background: $ui-01;
+    padding: 1rem;
+    height: 100%;
+  }
+  .no-mr {
+    margin-right: 0 !important;
+  }
+  .no-mb {
+    margin-bottom: 0 !important;
+  }
+  .mining-tabs-wrapper {
+    margin-bottom: var(--box-padding);
+  }
+  .mining-tabs-container {
+    padding: 1rem;
+    padding-bottom: 0;
+    .column-inner-wrapper {
+      margin-right: var(--box-padding);
+    }
+    .cv-row {
+      .cv-column {
+        margin-bottom: 0;
+      }
+    }
+    .deposite-section {
+      margin-top: 35px;
+      .cv-column {
+        margin-bottom: 20px;
+        display: flex;
+      }
+      .key {
+      }
+      .dash {
+        flex-grow: 1;
+        border-bottom-style: dashed;
+        border-bottom-width: 1px;
+        margin-left: 10px;
+        margin-right: 10px;
+      }
+      .value {
+        float: right;
+        font-weight: 700;
+      }
+    }
+    .subscribe-container {
+      height: 100%;
+      position: relative;
+    }
+    .cv-tab.bx--tabs--scrollable {
+      padding-bottom: 3px;
+      .bx--tabs__overflow-indicator--right {
+        background-image: none;
+      }
+      .bx--tabs__overflow-indicator--left {
+        background-image: none;
+      }
+      .bx--tab--overflow-nav-button svg {
+        fill: $text-01;
+      }
+    }
+    .bx--tabs--scrollable__nav-item:hover {
+      .bx--tabs--scrollable__nav-link {
+        color: $text-01;
+      }
+    }
+    .bx--tabs--scrollable__nav-link {
+      color: $text-01;
+      font-size: 15px;
+      width: unset;
+    }
+    .bx--tabs__nav-item--selected {
+      .bx--tabs--scrollable__nav-link {
+        color: $text-01;
+        font-size: 15px;
+        border-bottom: 2px solid #ff0038;
+        &:focus {
+          border-bottom: 2px solid #ff0038 !important;
+        }
+      }
+    }
+    .cv-tabs {
+      height: 100%;
+    }
+    .cv-tabs__panels {
+      height: calc(100% - 44px);
+      padding-top: 25px;
+      .cv-text-input {
+        label {
+          margin-left: 0;
+          color: $text-01;
+        }
+        .bx--form__helper-text {
+          color: $text-01;
+        }
+        input {
+          background-color: $ui-03 !important;
+        }
+      }
+      .link-get-lp-token {
+        position: absolute;
+        top: 0;
+        right: 0;
+        color: #ff0038;
+      }
+      .max-button {
+        position: absolute;
+        right: 6px;
+        top: 28px;
+        font-size: 15px !important;
+        padding: 0;
+        min-height: 2rem;
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+        background-color: $ui-03 !important;
+        color: $text-01 !important;
+      }
+    }
+  }
+  .mining-left-pane {
+    padding: 0 !important;
+    margin-bottom: var(--box-padding);
+    .title {
+      color: $text-02;
+      display: block;
+    }
+    .value {
+      font-size: 18px;
+      display: block;
+      margin-top: 10px;
+      margin-bottom: 8px;
+      font-weight: 700;
+      svg {
+        margin-left: 5px;
+      }
+    }
+    .section-column {
+      background-color: $ui-01;
+      margin-right: var(--box-padding);
+      padding: 1.1rem;
+      height: 100%;
+    }
+    .chart-meter {
+      position: relative;
+      padding-bottom: 30px;
+      .bx--chart-holder {
+        background-color: $ui-01;
+        .bx--cc--meter rect.container {
+          fill: $ui-03;
+        }
+        .bx--cc--meter-title {
+          .meter-title {
+            font-weight: normal;
+            font-size: 14px;
+          }
+          .percent-value {
+            display: none;
+          }
+        }
+        .bx--cc--meter line.peak {
+          stroke: $ui-05;
+        }
+      }
+      .meter-percentage-value {
+        position: absolute;
+        top: 20px;
+        right: 18px;
+        color: $text-01;
+      }
+      .meter-bottom-label {
+        position: absolute;
+        left: 18px;
+        color: $text-01;
+      }
+      .meter-bottom-value {
+        position: absolute;
+        right: 18px;
+        color: $text-01;
+      }
+    }
+  }
+  .action-wrapper {
+    position: relative;
+    background-color: $ui-01;
+    .action-container {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      .btn-stake {
+        width: 100%;
+        min-width: 125px;
+        min-height: 40px;
+        padding: 27px 18px !important;
+        font-size: 22px !important;
+      }
+    }
+  }
+  // Mobile view
+  @media screen and (max-width: 42rem) {
+    .column-inner-wrapper {
+      margin-right: 0 !important;
+    }
+    .cv-column {
+      margin-bottom: var(--box-padding) !important;
+    }
+    .section-column {
+      margin-right: 0 !important;
+      text-align: center;
+    }
+    .top-header-container {
+      .top-header-title {
+        font-size: 16px !important;
+      }
+      .top-learn-more {
+        top: 10px !important;
+      }
+    }
+    .mining-left-pane {
+      margin-bottom: 0 !important;
+    }
+    .mining-tabs-container {
+      .action-container {
+        position: relative !important;
+        margin-top: 10px;
+        .btn-stake {
+          margin-left: 0 !important;
+          justify-content: center;
+          padding-left: 0;
+          padding-right: 0;
+        }
+      }
+    }
+    .mining-main-conatiner {
+      flex-direction: column-reverse;
+    }
+  }
+  .white-button {
+    background-color: $ui-05 !important;
+    color: $ui-background !important
+  }
+}

@@ -1,0 +1,82 @@
+[
+      [
+            "PRIVATE",
+            "0.00",
+            "Gamma Fees",
+            "-",
+            "-",
+            "Active"
+      ],
+      [
+            "VISR",
+            "0.00",
+            "Gamma Fees",
+            "-",
+            "-",
+            "Active"
+      ],
+      [
+            "ETH-USDT",
+            "0.00",
+            "Gamma 1.0",
+            "0.00",
+            "-",
+            "Whitelist"
+      ],
+      [
+            "USDC-ETH",
+            "0.00",
+            "Gamma 1.0",
+            "0.00",
+            "-",
+            "Whitelist"
+      ],
+      [
+            "VISR-ETH",
+            "0.00",
+            "Gamma 1.0",
+            "0.00",
+            "-",
+            "Private Beta"
+      ],
+      [
+            "ETH-TRU",
+            "0.00",
+            "Gamma 1.0",
+            "0.00",
+            "-",
+            "Private Beta"
+      ],
+      [
+            "GTC-ETH",
+            "0.00",
+            "Gamma 1.0",
+            "0.00",
+            "-",
+            "Private Beta"
+      ],
+      [
+            "USDC",
+            "0.00",
+            "Liq Mining",
+            "0.00",
+            "-",
+            "v1 Migration"
+      ],
+      [
+            "DAI",
+            "0.00",
+            "Liq Mining",
+            "0.00",
+            "-",
+            "v1 Migration"
+      ],
+      [
+            "USDT",
+            "0.00",
+            "Liq Mining",
+            "0.00",
+            "-",
+            "v1 Migration"
+      ]
+]

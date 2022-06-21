@@ -1,0 +1,52 @@
+@import "@carbon/themes/scss/themes";
+@import "./variables.scss";
+
+.main-dark--theme {
+  @include carbon--theme($carbon--theme--g100) {
+    @import "./pages/app.scss";
+    @import "./carbon-styles-override.scss";
+    @import "./pages/header.scss";
+    @import "./pages/footer.scss";
+    @import "./pages/homepage.scss";
+    @import "./pages/lorem-table-demo.scss";
+    @import "./pages/strategy.scss";
+    @import "./pages/analytics.scss";
+    @import "./pages/visr.scss";
+    @import "./pages/active-liquidity.scss";
+    @import "./pages/address.scss";
+    @import "./pages/notification.scss";
+    @import "./pages/vault-detail.scss";
+    @import "./pages/backtest.scss";
+    @import "./pages/visor-protocol-overview.scss";
+    @import "./pages/liquidity-mining.scss";
+    @import "./pages/migrate.scss";
+    @import "./pages/protocol-stats.scss";
+    @import "./pending-transactions.scss";
+    @import "./pages/staked-stats.scss";
+  }
+}
+
+.main-light--theme {
+  @include carbon--theme($carbon--theme--white) {
+    @import "./pages/app.scss";
+    @import "./carbon-styles-override.scss";
+    @import "./pages/header.scss";
+    @import "./pages/footer.scss";
+    @import "./pages/homepage.scss";
+    @import "./pages/lorem-table-demo.scss";
+    @import "./pages/strategy.scss";
+    @import "./pages/analytics.scss";
+    @import "./pages/visr.scss";
+    @import "./pages/active-liquidity.scss";
+    @import "./pages/address.scss";
+    @import "./pages/notification.scss";
+    @import "./pages/vault-detail.scss";
+    @import "./pages/backtest.scss";
+    @import "./pages/visor-protocol-overview.scss";
+    @import "./pages/liquidity-mining.scss";
+    @import "./pages/migrate.scss";
+    @import "./pages/protocol-stats.scss";
+    @import "./pending-transactions.scss";
+    @import "./pages/staked-stats.scss";
+  }
+}

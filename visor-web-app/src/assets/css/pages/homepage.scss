@@ -1,0 +1,129 @@
+.home {
+  width: 100%;
+  overflow: auto;
+  background: $ui-background;
+  display: flex;
+  align-items: center;
+  .home-inner {
+    width: 789px;
+    height: auto;
+    margin: 100px auto;
+    max-width: 1000px;
+
+    .page-header {
+      color: $text-01;
+      text-align: initial;
+      max-width: 485px;
+      font-size: 25px;
+      word-break: break-word;
+      margin-top: 100px;
+      margin-bottom: 30px;
+    }
+    .tile-wrapper {
+      display: flex;
+      height: 529px;
+      .large_tile_group {
+        width: 399px;
+        margin-right: 4px;
+        @media only screen and (max-width: 576px) {
+          margin-left: 4px;
+        }
+      }
+      .middle_tile_group {
+        width: 399px;
+        margin-right: 4px;
+        @media only screen and (max-width: 576px) {
+          margin-left: 4px;
+        }
+      }
+      .c_tile {
+        position: relative;
+        padding: 20px;
+        background: $ui-01;
+        width: 100%;
+        height: 50%;
+        margin-bottom: 4px;
+        text-decoration: none;
+        display: flex;
+        flex-flow: column;
+        cursor: pointer;
+        border: 1px transparent solid;
+        &:hover {
+          background-color: $hover-ui;
+        }
+        &.active {
+          border: 1px $interactive-03 solid;
+          color: $text-01;
+          box-sizing: border-box;
+          .checkmark {
+            display: block;
+          }
+        }
+        &.large_tile {
+          height: calc(100% + 4px);
+          width: 100%;
+          margin-bottom: 0;
+        }
+        .checkmark {
+          position: absolute;
+          right: 15px;
+          display: none;
+        }
+        .tileHeader {
+          width: 232px;
+          color: $text-01;
+          margin-bottom: 10px;
+          font-family: "IBM Plex Sans";
+          font-style: normal;
+          font-weight: 300;
+          font-size: 29px;
+        }
+        .tileBody {
+          width: 232px;
+          font-family: "IBM Plex Sans";
+          font-style: normal;
+          font-weight: 300;
+          font-size: 16px;
+          line-height: 21px;
+          color: $text-01;
+          flex: 1;
+          margin-top: 20px;
+        }
+        .tileFooter {
+          svg {
+            fill: $text-01 !important;
+            display: block;
+            margin-left: auto;
+          }
+        }
+      }
+    }
+    @media only screen and (max-width: 1170px) {
+      .tile-wrapper {
+        .large_tile_group,
+        .middle_tile_group,
+        .small_tile_group {
+          width: 100%;
+        }
+      }
+    }
+    @media only screen and (max-width: 1000px) {
+      .tile-wrapper {
+        display: flex;
+        height: auto;
+        flex-wrap: wrap;
+        .large_tile_group,
+        .middle_tile_group,
+        .small_tile_group {
+          width: 100%;
+        }
+        .large_tile_group {
+          margin-bottom: 8px;
+        }
+        .middle_tile_group {
+          margin-bottom: 8px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,29 @@
+.playbook-list-item {
+  border-bottom: 2px solid $ui-background;
+  padding: 0.9rem;
+  min-height: 4.4rem;
+  display: list-item;
+  &:last-of-type {
+    border-bottom: none;
+  }
+
+  &--title {
+    margin-bottom: 0.2rem;
+    font-weight: normal;
+    &.loading {
+      width: 40%;
+    }
+  }
+  &--desc {
+    font-size: 14px;
+    color: $text-02;
+    &.loading {
+      width: 60%;
+    }
+  }
+  &--in-progress-stat {
+    font-size: 14px;
+    color: #d4bf5b;
+    margin-bottom: 0.5rem;
+  }
+}

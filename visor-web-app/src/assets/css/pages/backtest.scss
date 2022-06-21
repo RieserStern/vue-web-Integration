@@ -1,0 +1,262 @@
+.page-backtest {
+  padding-top: 20px;
+  background: $ui-background;
+  background-color: transparent;
+
+  max-width: 1088px;
+  margin: 2% auto;
+  @media (min-width: 99rem) {
+    .bx--grid {
+      padding-right: 1.5rem;
+      padding-left: 1.5rem;
+    }
+  }
+  .bx--dropdown {
+    background-color: $ui-01;
+    border: none;
+    .bx--dropdown-item {
+      &:hover {
+        background-color: $ui-02;
+        .bx--dropdown-link {
+          border-bottom-color: transparent;
+        }
+      }
+    }
+    .bx--list-box__label,
+    .bx--dropdown-link {
+      color: $text-01;
+      border: none;
+    }
+  }
+  .bx--dropdown--show-selected .bx--dropdown--selected {
+    background-color: $ui-02;
+  }
+  .bx--date-picker--range {
+    width: 100%;
+    justify-content: space-between;
+    .bx--date-picker-container {
+      width: 50%;
+      @media screen and (max-width: 42rem) {
+        max-width: 50%;
+      }
+      .bx--date-picker__input {
+        width: 100%;
+      }
+      .bx--date-picker__icon {
+        right: 0.5rem;
+      }
+    }
+    input {
+      background-color: $ui-01;
+      color: $text-01;
+    }
+    .bx--date-picker__icon {
+      fill: $text-01;
+    }
+  }
+  .left-form-item {
+    margin-bottom: 20px;
+  }
+  .dropdown-subtitle {
+    float: right;
+    color: $text-03;
+    font-weight: 500;
+  }
+  .icon-loading {
+    width: 40px;
+    min-height: 1.5rem !important;
+    .bx--inline-loading__animation {
+      height: 1.5rem !important;
+      .bx--loading {
+        width: 1.5rem !important;
+        height: 1.5rem !important;
+        .bx--loading__svg {
+          stroke: $text-02;
+        }
+      }
+    }
+  }
+  .btn-backtest {
+    width: 100%;
+    padding-right: 15px;
+    max-width: none;
+    background-color: $ui-01 !important;
+    justify-content: center;
+    span {
+      color: $text-01;
+      display: block;
+      font-size: 16px;
+      font-weight: 500;
+    }
+  }
+  .btn-start-backtest {
+    background-color: $text-01 !important;
+    span {
+      color: $ui-01;
+    }
+  }
+  .backtest-side-bar {
+    position: sticky;
+    top: 50px;
+    // padding-top: 50px;
+    @media screen and (max-width: 42rem) {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
+  .label-feature {
+    color: $text-01;
+    font-weight: 600;
+  }
+  .backtest-primary {
+    background: #ff0038 !important;
+  }
+  .backtest-warning {
+    background: #fcd535 !important;
+  }
+  .backtest-danger {
+    background-color: transparent;
+    background-image: linear-gradient(150deg, #f65860, #ac3e43);
+  }
+  .backtest-blue {
+    background-color: transparent;
+    background-image: linear-gradient(150deg, #799cf3, #4072ee);
+  }
+  .color-primary {
+    color: #ff0038 !important;
+  }
+  .backtest-body {
+    padding-left: 16px;
+    padding-right: 16px;
+    .label-backtest {
+      text-align: center;
+      color: $text-01;
+      font-weight: 500;
+      margin-bottom: 15px;
+    }
+    @media screen and (max-width: 42rem) {
+      margin-top: 20px;
+    }
+  }
+  .card {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .card-header {
+    height: 48px;
+    background-color: $ui-03;
+    padding: 0 24px;
+    padding-top: 16px;
+    .card-title {
+      color: $text-01;
+      font-size: 18px;
+      font-weight: 500;
+    }
+    @media screen and (max-width: 42rem) {
+      text-align: center;
+    }
+  }
+  .card-body {
+    background-color: $ui-01;
+    .bx--grid {
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+    .box {
+      padding: 20px 5px;
+      border-right: 1px solid $text-03;
+      border-bottom: 1px solid $text-03;
+      span {
+        display: block;
+        width: 100%;
+        text-align: center;
+      }
+      .box-title {
+        font-size: 15px;
+        font-weight: 500;
+        margin-bottom: 10px;
+        color: $text-01;
+      }
+      .box-subtitle {
+        color: $text-02;
+      }
+    }
+    .box:nth-child(6) {
+      border-right: none;
+    }
+    @media screen and (max-width: 42rem) {
+      .box:nth-child(2n) {
+        border-right: none;
+      }
+    }
+  }
+  .performance-body {
+    @media screen and (max-width: 42rem) {
+      .box {
+        border-right: none;
+      }
+    }
+  }
+  .activity-overview {
+    padding: 18px;
+    .activity-grid {
+      .activity-grid-column {
+        padding: 15px;
+        border-right: 1px solid rgba(0, 0, 0, 0.1);
+        span {
+          color: #161616;
+          display: block;
+          font-weight: 500;
+          font-size: 15px;
+          margin-bottom: 10px;
+        }
+      }
+      .activity-grid-column:last-child {
+        border-right: none;
+      }
+      @media screen and (max-width: 42rem) {
+        .activity-grid-column {
+          span {
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+  .activity-table {
+    overflow-x: auto;
+    .bx--data-table {
+      tr th {
+        background-color: $ui-02;
+        color: $text-01;
+        border-top: 1px solid $text-03;
+      }
+      tbody tr td {
+        background-color: $ui-01;
+        color: $text-02;
+        border-color: $text-03;
+      }
+    }
+  }
+  .graph-container {
+    margin-top: 20px;
+    padding-bottom: 10px;
+    .bx--chart-holder {
+      background-color: transparent;
+    }
+    .bx--cc--grid rect.chart-grid-backdrop {
+      fill: transparent;
+    }
+    .bx--cc--grid rect.chart-grid-backdrop.stroked {
+      stroke: transparent;
+    }
+    .bx--cc--area path.area,
+    .bx--cc--area-stacked path.area {
+      fill: none !important;
+      stroke: none !important;
+    }
+    .bx--cc--line path.line {
+      stroke: #ff0038 !important;
+    }
+  }
+}
